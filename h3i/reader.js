@@ -16,11 +16,11 @@ var fileInput = document.getElementById("csv"),
                 }
             };
             if (error.length > 0) {
-                document.getElementById("length_error").innerHTML = '<div class="alert alert-danger" role="alert">Ditemukan '+error.length+' kode error(tidak berhasil).</div>';
+                document.getElementById("length_error").innerHTML = '<div class="alert alert-danger" role="alert">Ditemukan '+error.length+' kode error.</div>';
                 document.getElementById("box_result").style.visibility = 'visible';
                 document.getElementById("result").innerHTML = error.join('<br>')
             } else {
-                document.getElementById("length_error").innerHTML = '<div class="alert alert-success" role="alert">Semua kode sukses. Kode error(tidak berhasil)</div>';
+                document.getElementById("length_error").innerHTML = '<div class="alert alert-success" role="alert">Semua kode sukses. Kode error tidak ditemukan.</div>';
                 document.getElementById("box_result").style.visibility = 'hidden';
             }
         };
