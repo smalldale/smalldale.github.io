@@ -10,7 +10,7 @@ var fileInput = document.getElementById("csv"),
             
             for (var i in raw_data.slice(2, raw_data.length)) {
                 // console.log(raw_data[i].includes("Your request cannot be processed at this time, please try again later."));
-                if (raw_data[i].includes("Your request")) {
+                if (raw_data[i].includes("Your")) {
                     error.push(raw_data[i].split(",")[1].slice(1));
                     // console.log(raw_data[i]);
                 }
